@@ -12,10 +12,10 @@ export class HttpService {
 
     return this.http.post(url,body,head);
   }
-  public get(url:any , body:any , head:any){
+  // public get(url:any , body:any , head:any){
 
-    return this.http.post(url,body,head);
-  }
+  //   return this.http.post(url,body,head);
+  // }
 
   public put(url:any , body:any , head:any){
 

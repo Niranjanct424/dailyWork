@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { LoginComponent } from './components/login/login.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
-
+import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -18,6 +18,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { UserVerificationComponent } from './components/user-verification/user-verification.component';
 
 
 
@@ -27,6 +28,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     RegistrationComponent,
     LoginComponent,
     ForgotPasswordComponent,
+    ResetPasswordComponent,
+    UserVerificationComponent,
   ],
   imports: [
     BrowserModule,

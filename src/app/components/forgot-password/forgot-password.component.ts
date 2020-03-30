@@ -1,4 +1,3 @@
-  
 import { Component, OnInit } from '@angular/core';
 import { Validators, FormControl} from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -43,7 +42,8 @@ export class ForgotPasswordComponent implements OnInit {
      },
 
      (error:any)=> {
-       this.matSnackBar.open(error.error.message, " " , {duration:5000})
+       console.log(error);
+      this.matSnackBar.open(error.error.message, " " , {duration:5000})
      }
      );
    }

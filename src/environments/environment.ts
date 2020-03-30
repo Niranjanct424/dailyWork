@@ -10,7 +10,8 @@ export const environment = {
   registerUrl:'/User/Registration',
   loginUrl:'/User/Login',
   forgotPasswordUrl:'/User/ForgotPassword',
-  resetPasswordUrl:'/User/UpdatePassword'
+  resetPasswordUrl:'/User/UpdatePassword/',
+  userVerificationUrl:'/User/Verification/'
 };
 
 /*
