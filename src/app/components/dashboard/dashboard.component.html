@@ -1,0 +1,47 @@
+
+<div class="container">
+    <div>
+        <mat-toolbar>
+            <mat-toolbar-row>
+                <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+                <img class="image" src=":assets\images\keep-512.jpg" alt="Keep">
+                <span><mat-label style="font-family: sans-serif; padding-left: 5px;">Keep</mat-label>
+                </span>
+                <div class="search">
+                    <button mat-icon-button class="search-icon">
+                      <mat-icon>search</mat-icon>
+                    </button>
+                    <input class="searchInput" placeholder="Search" >
+                    <button mat-icon-button class="cancel">
+                      <mat-icon>clear</mat-icon>
+                    </button>
+                  </div>
+                  
+                  <div class="rightside">
+                    <button mat-icon-button class="refresh">
+                        <mat-icon>refresh</mat-icon>
+                    </button>
+                    <button mat-icon-button class="list">
+                        <mat-icon>grid_view</mat-icon>
+                    </button>
+                    <button mat-icon-button class="sttings">
+                        <mat-icon>settings</mat-icon>
+                    </button>
+                    <button mat-icon-button class="apps">
+                        <mat-icon>apps</mat-icon>
+                    </button>
+                  </div>
+
+            </mat-toolbar-row>
+          
+     
+          
+            <mat-toolbar-row>
+              <span>Third Line</span>
+              <span class="example-spacer"></span>
+              <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
+              <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
+            </mat-toolbar-row>
+          </mat-toolbar>
+        </div>
+</div>

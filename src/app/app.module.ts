@@ -7,7 +7,7 @@ import { RegistrationComponent } from './components/registration/registration.co
 import { LoginComponent } from './components/login/login.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
-
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 
 
@@ -19,7 +19,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { UserVerificationComponent } from './components/user-verification/user-verification.component';
-
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 
 @NgModule({
@@ -30,6 +32,7 @@ import { UserVerificationComponent } from './components/user-verification/user-v
     ForgotPasswordComponent,
     ResetPasswordComponent,
     UserVerificationComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +46,9 @@ import { UserVerificationComponent } from './components/user-verification/user-v
     MatIconModule,
     MatSnackBarModule,
     HttpClientModule,
+    MatGridListModule,
+    MatButtonToggleModule,
+    MatToolbarModule
 
   ],
   providers: [

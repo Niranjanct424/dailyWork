@@ -36,26 +36,32 @@ export class LoginComponent implements OnInit {
      "";
    }
 
-onSubmit()
-{
-this.login.emailId = this.email.value;
-this.login.password = this.password.value;
-
-this.userService.userLogin(this.login).subscribe(
-
-  (response:any) =>{
-console.log("message:"+response.message);
-    
-    this.matSnackBar.open(response.message, "succesfull", {duration:5000})
-  
- },
- (error:any)=> {
-   this.matSnackBar.open(error.error.message, "failed", {duration:5000})
- }
-
-);
-
-
-}
-
-}
+   onSubmit()
+   {
+     if(this.email.value&&this.password.value!=null){
+   this.login.emailId = this.email.value;
+   this.login.password = this.password.value;
+   
+   this.userService.userLogin(this.login).subscribe(
+   
+     (response:any) =>{
+   console.log("message:"+response.message);
+ 
+   
+   this.matSnackBar.open(response.message , "Success", {duration:5000})
+   this.router.navigate(["/dashboard"]);
+     
+    },
+    (error:any)=> {
+      this.matSnackBar.open(error.error.message, "failed", {duration:5000})
+    }
+   
+   );
+     }
+     else{
+       this.matSnackBar.open("enter the fields", "failed", {duration:5000})
+     }
+   
+   }
+   
+   }
