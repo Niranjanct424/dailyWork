@@ -1,47 +1,104 @@
+<div class="dashboard">
+  <div class="toolbar">
+<mat-toolbar>
+  <mat-toolbar-row>
 
-<div class="container">
-    <div>
-        <mat-toolbar>
-            <mat-toolbar-row>
-                <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
-                <img class="image" src=":assets\images\keep-512.jpg" alt="Keep">
-                <span><mat-label style="font-family: sans-serif; padding-left: 5px;">Keep</mat-label>
-                </span>
-                <div class="search">
-                    <button mat-icon-button class="search-icon">
-                      <mat-icon>search</mat-icon>
-                    </button>
-                    <input class="searchInput" placeholder="Search" >
-                    <button mat-icon-button class="cancel">
-                      <mat-icon>clear</mat-icon>
-                    </button>
-                  </div>
-                  
-                  <div class="rightside">
-                    <button mat-icon-button class="refresh">
-                        <mat-icon>refresh</mat-icon>
-                    </button>
-                    <button mat-icon-button class="list">
-                        <mat-icon>grid_view</mat-icon>
-                    </button>
-                    <button mat-icon-button class="sttings">
-                        <mat-icon>settings</mat-icon>
-                    </button>
-                    <button mat-icon-button class="apps">
-                        <mat-icon>apps</mat-icon>
-                    </button>
-                  </div>
+      <span>
+          <button  mat-icon-button (click)="sidenav.toggle()" class="menu">
 
-            </mat-toolbar-row>
-          
+            <mat-icon>menu</mat-icon>
+          </button>
+      </span>
+
+      <img class="fundoo-icon" src="https://www.gstatic.com/images/branding/product/1x/keep_48dp.png" srcset="https://www.gstatic.com/images/branding/product/1x/keep_48dp.png 1x, https://www.gstatic.com/images/branding/product/2x/keep_48dp.png 2x " alt="" aria-hidden="true" style="width:40px;height:40px">
+          <span>FundooNote</span>
+
+          <div class="search">
      
-          
-            <mat-toolbar-row>
-              <span>Third Line</span>
-              <span class="example-spacer"></span>
-              <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
-              <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
-            </mat-toolbar-row>
-          </mat-toolbar>
-        </div>
+    <button mat-icon-button  class="search-icon">
+      <mat-icon>search</mat-icon>
+    </button>
+    <input type="text"  placeholder="Search" class="search-input">
+    <!-- <button mat-icon-button matTooltip="Clear Search">
+      <mat-icon>clear</mat-icon>
+    </button> -->
+  </div>
+
+  <div class="rightside-icons">
+      <button mat-icon-button class="refresh">
+        <mat-icon>refresh</mat-icon>
+      </button>
+      <button mat-icon-button class="grid">
+        <mat-icon>grid_view</mat-icon>
+      </button>
+      <button mat-icon-button class="setting">
+        <mat-icon>settings</mat-icon>
+      </button>
+
+    </div>
+
+    <div class="signout">
+      <button  mat-icon-button  (click)="onClick()" matTooltip="SignOut">
+          <mat-icon>face</mat-icon>
+      </button>
+    </div>
+    <div>
+      <img class="profile" src="">
+    </div>
+
+  </mat-toolbar-row>
+
+
+  </mat-toolbar>
+</div>
+
+
+<div class="sidenav-div">
+  <mat-sidenav-container class="sidenav-container">
+      <mat-sidenav class="matSidenav" #sidenav mode="side">
+
+          <div>
+              <button mat-button class="navbutton">
+                <mat-icon class ="sidenav-icon">lightbulb_outline</mat-icon>
+                 <span class= "icon-label">Notes</span>
+                 </button>
+
+                 <button mat-button class="navbutton">
+                  <mat-icon class ="sidenav-icon">notifications_none</mat-icon>
+                    <span class="icon-label">Reminders</span>
+                   </button>
+          </div>
+
+      <mat-divider class="divider"></mat-divider>
+
+  <div>
+      <span ><h3 class="label">LABELS</h3></span>
+      <div>
+          <button mat-button class="navbutton">
+              <mat-icon class ="sidenav-icon">create</mat-icon>
+             <span class="icon-label">Edit labels</span>
+             </button>
+      </div>
+  </div>
+
+  <mat-divider class="divider"></mat-divider>
+
+  <div>
+      <button mat-button class="navbutton">
+         <mat-icon class ="sidenav-icon">archive</mat-icon>
+         <span class="icon-label">Archive</span>
+        </button>
+  </div>
+  <div >
+      <button mat-button class="navbutton">
+        <mat-icon class ="sidenav-icon">delete</mat-icon>
+        <span class= "icon-label">Trash</span>
+        </button>
+  </div>
+
+
+          </mat-sidenav>
+  </mat-sidenav-container>
+
+      </div>      
 </div>

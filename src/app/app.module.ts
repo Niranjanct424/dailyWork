@@ -22,6 +22,9 @@ import { UserVerificationComponent } from './components/user-verification/user-v
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
@@ -48,7 +51,11 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     HttpClientModule,
     MatGridListModule,
     MatButtonToggleModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatSidenavModule,
+    MatDividerModule,
+    MatDialogModule
+    
 
   ],
   providers: [

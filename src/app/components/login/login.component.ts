@@ -47,7 +47,7 @@ export class LoginComponent implements OnInit {
      (response:any) =>{
    console.log("message:"+response.message);
  
-   
+   localStorage.setItem("token", response.token);
    this.matSnackBar.open(response.message , "Success", {duration:5000})
    this.router.navigate(["/dashboard"]);
      
