@@ -27,6 +27,7 @@ export class UserVerificationComponent implements OnInit {
         
         console.log("token:"+this.token);
         console.log("message:"+response.message);
+        console.log("user fetched : " + response);
          this.matSnackBar.open(response.message, "success", {duration:5000})
          this.router.navigate(["/login"]);
       },

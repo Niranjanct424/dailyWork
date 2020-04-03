@@ -25,7 +25,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatDialogModule} from '@angular/material/dialog';
-
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import {MatSelectModule} from '@angular/material/select';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,11 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatToolbarModule,
     MatSidenavModule,
     MatDividerModule,
-    MatDialogModule
+    MatDialogModule,
+    MatBottomSheetModule,
+    MatMenuModule,
+    MatSelectModule
+
     
 
   ],

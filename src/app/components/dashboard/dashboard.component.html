@@ -37,14 +37,45 @@
 
     </div>
 
-    <div class="signout">
+    <!-- <div class="signout">
       <button  mat-icon-button  (click)="onClick()" matTooltip="SignOut">
-          <mat-icon>face</mat-icon>
+        <img class="profile" src="..\assets\images\profile.jpg" alt="Avatar" width="37" height="32">
       </button>
-    </div>
-    <div>
-      <img class="profile" src="">
-    </div>
+    </div> -->
+    <!-- <div>
+      <button  mat-icon-button  (click)="onClick()" matTooltip="SignOut">
+        <img class="profile" src="..\assets\images\profile.jpg" alt="Avatar" width="50" height="50">
+      </button>
+    </div> -->
+    <div class="signout-container">
+      <div>
+          <button mat-button [matMenuTriggerFor]="beforeMenu"><img src="..\assets\images\profile.jpg" alt="Avatar"  style="border-radius: 50%;" class="profilepic" ></button>
+              <mat-menu #beforeMenu="matMenu" xPosition="before">
+              <div>
+                  <mat-card class="example-card">
+                      <div class="profilediv">
+                          <img src="..\assets\images\profile.jpg" alt="Avatar"  style="border-radius: 50%;" class="profilepic" >
+                      </div>
+                      <mat-card-header>
+                        <mat-card-title style="margin-left: 55px;">Niranjan</mat-card-title>
+                        <mat-card-subtitle>niranjangyadav124@gmail.com</mat-card-subtitle>
+                      </mat-card-header>
+                      <mat-divider>
+                      </mat-divider>
+                      <mat-card-content>
+                       
+                      </mat-card-content>
+                      <mat-card-actions>
+                        <button mat-button>LIKE</button>
+                        <button mat-button>SHARE</button>
+                      </mat-card-actions>
+                    </mat-card>
+              </div>
+                      <button (click)="onClick()" mat-stroked-button color="primary" style="margin-left: 70px; margin-top: 8px;">Signout</button>
+          </mat-menu>
+      </div>
+  </div>
+
 
   </mat-toolbar-row>
 
