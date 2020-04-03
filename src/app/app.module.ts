@@ -28,6 +28,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import {MatSelectModule} from '@angular/material/select';
 import {MatMenuModule} from '@angular/material/menu';
+import { CreatenotesComponent } from './components/createnotes/createnotes.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import {MatMenuModule} from '@angular/material/menu';
     ResetPasswordComponent,
     UserVerificationComponent,
     DashboardComponent,
+    CreatenotesComponent,
   ],
   imports: [
     BrowserModule,
