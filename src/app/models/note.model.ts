@@ -6,10 +6,10 @@ export class Note {
     isTrashed:boolean;
     color:String;
     reminder:String;
-     remainderTime: string;
-     createdDate: String;
-     updatedDate: string;
-     userId: number;
-     labelsList: Array<any>;
+    remainderTime: string;
+    createdDate: String;
+    updatedDate: string;
+    userId: number;
+    labelsList: Array<any>;
 
 }

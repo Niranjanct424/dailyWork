@@ -11,7 +11,10 @@ export const environment = {
   loginUrl:'/User/Login',
   forgotPasswordUrl:'/User/ForgotPassword',
   resetPasswordUrl:'/User/UpdatePassword/',
-  userVerificationUrl:'/User/Verification/'
+  userVerificationUrl:'/User/Verification/',
+  noteApiUrl:'http://localhost:8080/notes',
+  createNoteUrl:'Create'
+
 };
 
 /*
