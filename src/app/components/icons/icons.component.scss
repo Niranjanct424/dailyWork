@@ -1,0 +1,17 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.material-icons{
+    border:none;
+    width:70%;
+    height: 70%;
+}
+
+.material-icons:hover {
+    border: none;
+    background-color: white;
+    color: brown;
+}

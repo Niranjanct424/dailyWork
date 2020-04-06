@@ -1,4 +1,5 @@
 export class Note {
+    noteId: number;
     title:String;
     description:String;
     isArchived:boolean;
@@ -8,7 +9,7 @@ export class Note {
     reminder:String;
     remainderTime: string;
     createdDate: String;
-    updatedDate: string;
+    updatedDate: String;
     userId: number;
     labelsList: Array<any>;
 

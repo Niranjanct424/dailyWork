@@ -9,8 +9,6 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
-
-
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
@@ -28,7 +26,9 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import {MatSelectModule} from '@angular/material/select';
 import {MatMenuModule} from '@angular/material/menu';
-import { CreatenotesComponent } from './components/createnotes/createnotes.component';
+import { CreatenoteComponent } from './components/createnote/createnote.component';
+import { NoteComponent } from './components/note/note.component';
+import { DisplaynotesComponent } from './components/displaynotes/displaynotes.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +39,10 @@ import { CreatenotesComponent } from './components/createnotes/createnotes.compo
     ResetPasswordComponent,
     UserVerificationComponent,
     DashboardComponent,
-    CreatenotesComponent,
+    CreatenoteComponent,
+    NoteComponent,
+    DisplaynotesComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -61,9 +64,7 @@ import { CreatenotesComponent } from './components/createnotes/createnotes.compo
     MatDialogModule,
     MatBottomSheetModule,
     MatMenuModule,
-    MatSelectModule
-
-    
+    MatSelectModule,
 
   ],
   providers: [

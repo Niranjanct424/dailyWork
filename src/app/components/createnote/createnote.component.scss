@@ -1,0 +1,85 @@
+.searchbar{
+    border:none;
+    outline: none;
+    background-color: whitesmoke;
+    width:73%;
+}
+.input
+{
+    display: flex;
+    justify-content:center;
+    height: 100%;
+    width: 100%;
+    border:none;
+    outline:none;
+    margin-top: 15px;
+    // float: left;
+}
+.closedmatcard{
+    width:42%;
+    height:15px;
+    position: fixed;
+    left:35%;
+    top:10%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 1.25rem;
+    outline: none;
+    border: 1px solid transparent;
+}
+.icons{
+    color:rgba(172, 169, 169, 0.993);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.mat-card
+{
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid transparent;
+    transition-duration: .218s;
+}
+.openedmatcard{
+    background: white;
+    width:42%;
+    height:auto;
+    left:35%;
+    outline: none;
+    top:10%;
+    background-color: white;
+    align-items: center;
+    position: fixed;
+    border: 1px solid transparent;
+}
+.expandeditems{
+    width:95%;
+    height:20px;
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+}
+.threedots{
+    transform: rotate(90deg);
+}
+.close{
+    margin-left: 20%;
+    border:none;
+    outline: none;
+}
+.expandedicons{
+    color:rgb(117, 115, 115);
+    width:11%;
+}
+.mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button 
+{
+    margin-right: -6px;
+}
+
+.iconsdiv
+{
+    margin-top: 10px;
+}
